@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Functionality</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .tab-content {
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="p-6">
+    <div>
+      <div class="sm:hidden mb-4">
+        <label for="Tab" class="sr-only">Tab</label>
+        <select id="Tab" class="w-full rounded-md border-gray-200">
+          <option value="settings">Settings</option>
+          <option value="messages">Messages</option>
+          <option value="archive">Archive</option>
+          <option value="notifications" selected>Notifications</option>
+        </select>
+      </div>
+
+      <div class="hidden sm:block mb-4">
+        <div class="border-b border-gray-200">
+          <nav class="-mb-px flex gap-6" aria-label="Tabs">
+            <a
+              href="#"
+              class="tab-link shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              data-tab="settings"
+            >
+              Settings
+            </a>
+            <a
+              href="#"
+              class="tab-link shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              data-tab="messages"
+            >
+              Messages
+            </a>
+            <a
+              href="#"
+              class="tab-link shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              data-tab="archive"
+            >
+              Archive
+            </a>
+            <a
+              href="#"
+              class="tab-link shrink-0 border-b-2 border-sky-500 px-1 pb-4 text-sm font-medium text-sky-600"
+              data-tab="notifications"
+              aria-current="page"
+            >
+              Notifications
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div id="tab-contents">
+        <div class="tab-content hidden" id="settings">Settings content</div>
+        <div class="tab-content hidden" id="messages">Messages content</div>
+        <div class="tab-content hidden" id="archive">Archive content</div>
+        <div class="tab-content" id="notifications">Notifications content</div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabLinks = document.querySelectorAll(".tab-link");
+        const tabContents = document.querySelectorAll(".tab-content");
+        const selectTab = document.getElementById("Tab");
+
+        function showTab(tabId) {
+          tabContents.forEach((content) => {
+            if (content.id === tabId) {
+              content.classList.remove("hidden");
+              content.classList.add(
+                "opacity-100",
+                "transform",
+                "translate-x-0"
+              );
+            } else {
+              content.classList.add("hidden");
+              content.classList.remove(
+                "opacity-100",
+                "transform",
+                "translate-x-0"
+              );
+            }
+          });
+
+          tabLinks.forEach((link) => {
+            if (link.dataset.tab === tabId) {
+              link.classList.add("border-sky-500", "text-sky-600");
+              link.classList.remove("border-transparent", "text-gray-500");
+            } else {
+              link.classList.remove("border-sky-500", "text-sky-600");
+              link.classList.add("border-transparent", "text-gray-500");
+            }
+          });
+
+          selectTab.value = tabId;
+        }
+
+        tabLinks.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            showTab(this.dataset.tab);
+          });
+        });
+
+        selectTab.addEventListener("change", function () {
+          showTab(this.value);
+        });
+
+        showTab("notifications"); // Set default tab
+      });
+    </script>
+  </body>
+</html>
+
+<div class="max-w-screen-xl mx-auto px-5">
+  <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+    <div class="py-5">
+      <details class="group">
+        <summary
+          class="flex justify-between items-start font-medium cursor-pointer list-none"
+        >
+          <span> What is a SAAS platform?</span>
+          <span class="transition group-open:rotate-180">
+            <svg
+              fill="none"
+              height="24"
+              shape-rendering="geometricPrecision"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="mt-3 text-left group-open:animate-fadeIn">
+          SAAS platform is a cloud-based software service that allows users to
+          access and use a variety of tools and functionality.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary
+          class="flex justify-between items-start font-medium cursor-pointer list-none"
+        >
+          <span> How does billing work?</span>
+          <span class="transition group-open:rotate-180">
+            <svg
+              fill="none"
+              height="24"
+              shape-rendering="geometricPrecision"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="mt-3 text-left group-open:animate-fadeIn">
+          We offers a variety of billing options, including monthly and annual
+          subscription plans, as well as pay-as-you-go pricing for certain
+          services. Payment is typically made through a credit card or other
+          secure online payment method.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary
+          class="flex justify-between items-start font-medium cursor-pointer list-none"
+        >
+          <span> Can I get a refund for my subscription?</span>
+          <span class="transition group-open:rotate-180">
+            <svg
+              fill="none"
+              height="24"
+              shape-rendering="geometricPrecision"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="mt-3 text-left group-open:animate-fadeIn">
+          We offers a 30-day money-back guarantee for most of its subscription
+          plans. If you are not satisfied with your subscription within the
+          first 30 days, you can request a full refund. Refunds for
+          subscriptions that have been active for longer than 30 days may be
+          considered on a case-by-case basis.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary
+          class="flex justify-between items-start font-medium cursor-pointer list-none"
+        >
+          <span> How do I cancel my subscription?</span>
+          <span class="transition group-open:rotate-180">
+            <svg
+              fill="none"
+              height="24"
+              shape-rendering="geometricPrecision"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="mt-3 text-left group-open:animate-fadeIn">
+          To cancel your We subscription, you can log in to your account and
+          navigate to the subscription management page. From there, you should
+          be able to cancel your subscription and stop future billing.
+        </p>
+      </details>
+    </div>
+  </div>
+</div>
