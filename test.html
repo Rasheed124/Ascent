@@ -3,250 +3,1944 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tab Functionality</title>
+    <link rel="stylesheet" href="./main.css" />
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .tab-content {
-        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-      }
-      .hidden {
-        display: none;
-      }
-    </style>
-  </head>
-  <body class="p-6">
-    <div>
-      <div class="sm:hidden mb-4">
-        <label for="Tab" class="sr-only">Tab</label>
-        <select id="Tab" class="w-full rounded-md border-gray-200">
-          <option value="settings">Settings</option>
-          <option value="messages">Messages</option>
-          <option value="archive">Archive</option>
-          <option value="notifications" selected>Notifications</option>
-        </select>
-      </div>
 
-      <div class="hidden sm:block mb-4">
-        <div class="border-b border-gray-200">
-          <nav class="-mb-px flex gap-6" aria-label="Tabs">
-            <a
-              href="#"
-              class="tab-link shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              data-tab="settings"
-            >
-              Settings
+    <title>Ascent- Marketing Template</title>
+
+    <!-- #030051
+     white
+#E6E6E6
+deep green
+#1DB954
+light green
+#CDF7DC -->
+  </head>
+  <body class="font-montserrat">
+    <section
+      class="bg-gradient-to-r from-[#030051] to-[#1DB954] text-white pb-10"
+    >
+      <div class="">
+        <header
+          class="flex justify-center items-center border-b-2 border-b-[#030051] max-w-screen-md mx-auto"
+        >
+          <div
+            class="w-[170px] h-[50px] p-1 relative flex justify-center items-center"
+          >
+            <a href="#" class="">
+              <img
+                class=""
+                src="https://ascenttech.africa/wp-content/uploads/2024/06/Ascent-Tech-Hub-Africa-Logo-wh-sl-Digital-and-Tech-Skills-Center-Lagos-Nigeria-Africa.webp"
+                src="<?php echo esc_url( 'http://localhost/market/wp-content/uploads/2024/06/ibrahim-e1619626668124.jpg' ); ?>"
+                alt=""
+              />
             </a>
-            <a
-              href="#"
-              class="tab-link shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              data-tab="messages"
+          </div>
+        </header>
+
+        <!-- Hero section -->
+        <div class="">
+          <div class="text-center space-y-3.5 p-5 max-w-screen-md mx-auto">
+            <h4 class="text-lg font-bold">
+              Transform Your Tech Career with Proven
+              <span class="text-[#030051]">Step-by-Step</span> Guidance
+            </h4>
+
+            <p class="text-sm uppercase">
+              We offer expert-designed training programs to help you excel in
+              the tech field.
+            </p>
+
+            <h3 class="text-[#CDF7DC] text-2xl font-bold sm:text-4xl uppercase">
+              Our proven <span class="text-[#030051]">Step-by-Step</span> system
+              prepares you for internships and jobs.
+            </h3>
+
+            <h3 class="text-[#CDF7DC] text-sm sm:text-lg uppercase">
+              With both online and physical training available, you can learn in
+              the way that suits you best.
+            </h3>
+
+            <p class="text-sm uppercase">
+              Join us today to unlock your potential and transform your future.
+            </p>
+          </div>
+
+          <!-- VIDEO -->
+          <!-- https://www.w3schools.com/tags/movie.mp4 -->
+          <div
+            class="max-w-2xl flex justify-center flex-col items-center mx-auto gap-5 mt-5 p-4 text-center"
+          >
+            <video
+              class="w-full border-2 border-[#030051]"
+              src=""
+              controls
+            ></video>
+            <div>
+              <a
+                class="block p-3 w-full max-w-2xl mx-auto text-center bg-[#1DB954] text-white rounded-xl"
+                href="#"
+              >
+                GET-STARTED
+              </a>
+              <p class="text-sm font-thin italic my-1">
+                Lock-in access at the early-bird discounted price before it goes
+                up
+              </p>
+              <div
+                class="mt-12 flex flex-col sm:flex-row items-center sm:items-center gap-2"
+              >
+                <div class="flex -space-x-3">
+                  <img
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-100"
+                    src="./assets/Fashola-Khadijah-Omolola-student-in-duromedia-academy-training-center-ogba-lagos.webp"
+                    alt="user image"
+                  />
+                  
+                  <img
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-100"
+                    src="./assets/ibrahim-e1619626668124.jpg"
+                    alt="user image"
+                  />
+                  <img
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-100"
+                    src="./assets/gabriel.webp"
+                    alt="user image"
+                  />
+                  <img
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-100"
+                    src="./assets/toheeb-student-in-duromedia-academy-training-center-ogba-lagos-scaled-1.webp"
+                    alt="user image"
+                  />
+                  <img
+                    class="inline-block object-cover h-8 w-8 rounded-full ring-2 ring-slate-100"
+                    src="./assets/Sakibu-Basirat-Abiodun-student-in-duromedia-academy-training-center-ogba-lagos.webp"
+                    alt="user image"
+                  />
+                </div>
+
+                <p class="">
+                  Join <span class="font-semibold">150+</span> successful
+                  student worldwide
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom content -->
+          <div
+            class="max-w-screen-xl mx-auto border-y-2 my-0.5 border-[#1db9545e] p-3"
+          >
+            <div
+              class="max-w-screen-md mx-auto flex flex-wrap justify-center items-center gap-6"
             >
-              Messages
-            </a>
-            <a
-              href="#"
-              class="tab-link shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-              data-tab="archive"
-            >
-              Archive
-            </a>
-            <a
-              href="#"
-              class="tab-link shrink-0 border-b-2 border-sky-500 px-1 pb-4 text-sm font-medium text-sky-600"
-              data-tab="notifications"
-              aria-current="page"
-            >
-              Notifications
-            </a>
-          </nav>
+              <div class="flex gap-2">
+                <img src="./assets/checks.png" class="w-5 h-5" alt="" />
+                <p class="uppercase text-xs">No Prior Experience Needed</p>
+              </div>
+              <div class="flex gap-2">
+                <img src="./assets/checks.png" class="w-5 h-5" alt="" />
+                <p class="uppercase text-xs">Learn from Experts</p>
+              </div>
+              <div class="flex gap-2">
+                <img src="./assets/checks.png" class="w-5 h-5" alt="" />
+                <p class="uppercase text-xs">Hands-on Projects</p>
+              </div>
+              <div class="flex gap-2">
+                <img src="./assets/checks.png" class="w-5 h-5" alt="" />
+                <p class="uppercase text-xs">Global recognized certificate</p>
+              </div>
+              <div class="flex gap-2">
+                <img src="./assets/checks.png" class="w-5 h-5" alt="" />
+                <p class="uppercase text-xs">Job Placement Assistance</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div id="tab-contents">
-        <div class="tab-content hidden" id="settings">Settings content</div>
-        <div class="tab-content hidden" id="messages">Messages content</div>
-        <div class="tab-content hidden" id="archive">Archive content</div>
-        <div class="tab-content" id="notifications">Notifications content</div>
+    <section class="px-4 py-10 md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-screen-lg mx-auto">
+        <h2
+          class="max-w-sm border-b-2 font-semibold pb-1 mb-6 text-xl border-[#1DB954]"
+        >
+          Dear Aspiring Tech <br />
+          Professional,
+        </h2>
+
+        <div class="space-y-6 text-lg text-justify">
+          <h5 class="">
+            If you’re aiming to secure your first tech job and rise to the top
+            10%, even with no prior experience, this program is for you.
+          </h5>
+
+          <p>Here’s why:</p>
+
+          <p>
+            My name is Sulayman Raji, and I was once in your shoes. I struggled
+            to break into the tech industry without guidance. After countless
+            hours and attempts, I discovered a game-changing approach.
+          </p>
+
+          <p>Fast forward to today…</p>
+
+          <h5>
+            I’ve secured a high-paying tech job and advanced rapidly in my
+            career. I know what works and what doesn’t in today’s tech
+            landscape.
+          </h5>
+
+          <p>
+            At Ascent Tech Hub, we mentor motivated individuals to help them
+            start their tech careers and achieve their first major milestone in
+            the next few weeks.
+          </p>
+
+          <p>
+            Join us, and we’ll share the exact steps to secure your first tech
+            job and thrive in the industry.
+          </p>
+
+          <p>
+            Sincerely, <br />
+            Sulayman Raji Ascent Tech Hub
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const tabLinks = document.querySelectorAll(".tab-link");
-        const tabContents = document.querySelectorAll(".tab-content");
-        const selectTab = document.getElementById("Tab");
+    <!-- About Section -->
+    <section
+      class="px-4 py-10 md:px-24 lg:px-8 lg:py-20 bg-[#030051] text-white"
+    >
+      <div class="max-w-screen-lg mx-auto">
+        <div class="text-left">
+          <p class="text-xl font-semibold">
+            Our Story: Empowering African Tech Dreams
+          </p>
 
-        function showTab(tabId) {
-          tabContents.forEach((content) => {
-            if (content.id === tabId) {
-              content.classList.remove("hidden");
-              content.classList.add(
-                "opacity-100",
-                "transform",
-                "translate-x-0"
-              );
-            } else {
-              content.classList.add("hidden");
-              content.classList.remove(
-                "opacity-100",
-                "transform",
-                "translate-x-0"
-              );
-            }
-          });
+          <h5 class="text-lg mt-4">
+            At Ascent Tech Hub Africa, our mission is to educate ten million
+            Africans, enabling them to pursue their passions and sustain
+            themselves without compromising their values. Through our
+            #10MMinusOne initiative, we aim to revolutionize education,
+            providing equal access for both teachers and students.
+          </h5>
+        </div>
 
-          tabLinks.forEach((link) => {
-            if (link.dataset.tab === tabId) {
-              link.classList.add("border-sky-500", "text-sky-600");
-              link.classList.remove("border-transparent", "text-gray-500");
-            } else {
-              link.classList.remove("border-sky-500", "text-sky-600");
-              link.classList.add("border-transparent", "text-gray-500");
-            }
-          });
+        <div class="space-y-6 text-justify mt-10">
+          <p>
+            The journey to impacting ten million lives begins with you. <br />
+            Every significant change starts with a single step. Join us in this
+            transformative march and be a part of our story.
+          </p>
 
-          selectTab.value = tabId;
-        }
+          <a
+            class="group relative inline-block text-sm font-medium text-[#1DB954] focus:outline-none"
+            href="#"
+          >
+            <span class="absolute inset-0 border border-current"></span>
+            <span
+              class="block border border-current bg-transparent px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+            >
+              Join the Movement.
+            </span>
+          </a>
 
-        tabLinks.forEach((link) => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-            showTab(this.dataset.tab);
-          });
-        });
+          <ul class="space-y-4">
+            <div class="space-y-4">
+              <h4 class="capitalize text-xl font-bold text-[#1DB954]">
+                Mission
+              </h4>
+              <p>
+                We are an academy with a focus on developing leaders with
+                distinctively global perspectives. At the core of all we do is a
+                focus on our students’ needs as we prepare them for their
+                careers/skills. We bring together the latest technologies, and
+                dynamic learning spaces to identify solutions to the complex
+                global problems of the 21st Century.
+              </p>
+            </div>
 
-        selectTab.addEventListener("change", function () {
-          showTab(this.value);
-        });
+            <div class="space-y-4">
+              <h4 class="capitalize text-xl font-bold text-[#1DB954]">
+                vision
+              </h4>
+              <p>
+                Our Vision is to empower students to value knowledge/skills that
+                will support them as life-long learners and productive global
+                citizens in an ever-changing world.
+              </p>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        showTab("notifications"); // Set default tab
-      });
-    </script>
+    <!-- Testimonial Section -->
+    <section
+      class="text-black text-center px-4 py-10 md:px-24 lg:px-8 lg:py-20"
+    >
+      <div class="max-w-screen-lg mx-auto">
+        <div class="">
+          <h2
+            class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#030051] sm:text-4xl md:mx-auto"
+          >
+            Read trusted reviews from our students
+          </h2>
+
+          <div class="mt-8 flex flex-col md:flow-row owl-carousel owl-theme">
+            <blockquote class="item rounded-lg bg-gray-50 p-6 shadow-md sm:p-8">
+              <div class="flex items-center gap-4">
+                <img
+                  alt=""
+                  src="./assets/Fashola-Khadijah-Omolola-student-in-duromedia-academy-training-center-ogba-lagos.webp"
+                  class="!w-24 rounded-full object-cover"
+                />
+
+                <div>
+                  <div class="flex justify-start gap-0.5 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="mt-0.5 text-lg text-left font-medium text-gray-900">
+                    Ibrahim <br />
+                    <span class="text-sm">Graphics Desiger</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-gray-700 text-left">
+                Going back to the time I knew and started with Ascent Tech Hub,
+                it was all a dream come true for a guy who was lost in the path
+                to thread. As my amiable leader and teacher always loves to get
+                work done at its best and also not losing out with all updated
+                trends, you will find him always researching to get better at
+                things and he uses to force us to do the same. I was lucky to
+                find a respectful, hardworking and technocrat in Mr Durodola,
+                his values, modalities and godliness have shaped him to be the
+                best. I hope your journey will blossom by joining Ascent Tech
+                Hub Africa today just like how mine is. I have been able to work
+                with different folks from all walks of life with what I have
+                garnered from the academy
+              </p>
+            </blockquote>
+            <blockquote class="item rounded-lg bg-gray-50 p-6 shadow-md sm:p-8">
+              <div class="flex items-center gap-4">
+                <img
+                  alt=""
+                  src="./assets/Fashola-Khadijah-Omolola-student-in-duromedia-academy-training-center-ogba-lagos.webp"
+                  class="!w-24 rounded-full object-cover"
+                />
+
+                <div>
+                  <div class="flex justify-start gap-0.5 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="mt-0.5 text-lg text-left font-medium text-gray-900">
+                    Oladotun Gabriel <br />
+                    <span class="text-sm">Front End Developer</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-gray-700 text-left">
+                I’m Oladotun Gabriel, from Ogun State, Nigeria. I enrolled at
+                Duromedia Academy about 3 months ago as a web developer. Web
+                development is not an easy thing, but thank God I have learned a
+                lot from Duromedia Academy. I have experience with these
+                programming languages: html, CSS, and a little Javascript; some
+                frameworks like Tailwind and Bootstrap; and the most powerful
+                website design software (WordPress). I developed a website for
+                Lagos State model senior college, Igbonla, Epe. I use WordPress
+                to develop this website; all you need to do is search for
+                “Lasmocol Igbonla.” I bet you’re going to like it. I have the
+                plan of developing more websites which I will be updating to my
+                GitHub account.
+              </p>
+            </blockquote>
+            <blockquote class="item rounded-lg bg-gray-50 p-6 shadow-md sm:p-8">
+              <div class="flex items-center gap-4">
+                <img
+                  alt=""
+                  src="./assets/Fashola-Khadijah-Omolola-student-in-duromedia-academy-training-center-ogba-lagos.webp"
+                  class="!w-24 rounded-full object-cover"
+                />
+
+                <div>
+                  <div class="flex justify-start gap-0.5 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="mt-0.5 text-lg text-left font-medium text-gray-900">
+                    Barakat Yusuff <br />
+                    <span class="text-sm">Front End Developer</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-gray-700 text-left">
+                I am a medical student and website designer. I have experience
+                in HTML and CSS languages, Bootstrap, a framework, and also
+                WordPress: a website design platform and software. I have built
+                websites and can design one from scratch.
+              </p>
+            </blockquote>
+            <blockquote class="item rounded-lg bg-gray-50 p-6 shadow-md sm:p-8">
+              <div class="flex items-center gap-4">
+                <img
+                  alt=""
+                  src="./assets/Fashola-Khadijah-Omolola-student-in-duromedia-academy-training-center-ogba-lagos.webp"
+                  class="!w-24 rounded-full object-cover"
+                />
+
+                <div>
+                  <div class="flex justify-start gap-0.5 text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="mt-0.5 text-lg text-left font-medium text-gray-900">
+                    Salami Fasilat <br />
+                    <span class="text-sm">Web design</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-gray-700 text-left">
+                I am Salami Fasilat by name. Am a Business admin graduate and an
+                entrepreneur. I was opportune to attend the Duromedia Academy
+                Masterclass in February 2021 and I would say, I was quite
+                fortunate. Before now, my ability to effectively use graphic
+                suites and packages seemed difficult. But after my classes at
+                Duromedia, I have gained good confidence to design beautifully,
+                I had hands-on practical lessons and useful resources that aid
+                my learning process. With acquired skills like graphics design
+                and web designs, my business is now positioned strategically
+                towards more success.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="px-4 py-10 md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-screen-lg mx-auto">
+        <div
+          class="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+        >
+          <div>
+            <p
+              class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#030051] uppercase rounded-full bg-[#CDF7DC]"
+            >
+              Courses
+            </p>
+          </div>
+          <h2
+            class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#030051] sm:text-4xl md:mx-auto"
+          >
+            Embark on a Transformation Journey with our Tech Hub!
+          </h2>
+          <p class="text-base text-[#030051] md:text-lg">
+            Our cutting-edge courses are designed to equip you with the skills
+            of tomorrow. Get ready to conquer the tech world and feel
+            unstoppable upon completion.
+          </p>
+        </div>
+
+        <!-- Course Start -->
+        <div class="text-[#222138]">
+          <div class="mt-5">
+            <div class="max-w-xl mb-6">
+              <h2
+                class="max-w-lg mb-6 font-sans text-2xl font-bold tracking-tight sm:leading-none"
+              >
+                Full Stack Development
+
+                <!-- <div class="  flex   ">
+                  <span class="bg-[#1DB954] h-1 w-8 p-2 "></span>
+                </div> -->
+              </h2>
+
+              <p class="text-base">
+                Are you interested in becoming a Full Stack Developer and
+                mastering the latest technologies and tools in web development?
+                Our Full Stack Development course is the perfect fit for you!
+              </p>
+            </div>
+            <p class="mb-4 text-sm font-bold tracking-widest uppercase">
+              What you will learn
+            </p>
+            <div class="">
+              <div class="flex flex-col justify-center">
+                <div
+                  class="grid py-2 lg:py-3 max-w-screen-lg mx-auto lg:grid-cols-2 lg:space-y-0 lg:divide-x space-y-3 sm:gap-2 sm:space-y-0"
+                >
+                  <ul class="space-y-4 sm:px-6">
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Front-end Development:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn the essentials of front-end development,
+                        including HTML, CSS, and JavaScript. You’ll also learn
+                        how to use frameworks like React, Vue.js, or Angular for
+                        building dynamic and responsive web applications.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Version Control:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to use Git and GitHub for version
+                        control, collaboration, and code management.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Relational and Non-Relational Databases:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn the basics of database design and
+                        management, including the difference between relational
+                        and non-relational databases, how to design database
+                        schemas, and how to interact with databases using SQL or
+                        NoSQL queries.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Testing and Debugging:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to test and debug web applications to
+                        ensure their reliability, security, and performance.
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="space-y-4 sm:px-6">
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Back-end Development:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to build back-end systems, including
+                        web servers, APIs, and databases. You’ll also learn how
+                        to use programming languages like Python, Node.js, or
+                        Java to build server-side applications.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Cloud Computing:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to deploy web applications to cloud
+                        services like Amazon Web Services (AWS), Google Cloud
+                        Platform (GCP)
+                      </p>
+                    </li>
+
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Security and Authentication:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to implement security measures such as
+                        HTTPS, SSL, and authentication mechanisms such as OAuth2
+                        and JWT.
+                      </p>
+                    </li>
+
+                    <p class="mt-4">
+                      <span class="font-bold"
+                        >Essentials:
+                        <span class="font-normal"
+                          >350,000 - <span class="font-bold">Duration</span>: 3
+                          Months
+                        </span>
+                      </span>
+                      <br />
+                      <span class="font-bold"
+                        >Bootcamp:
+                        <span class="font-normal"
+                          >700,000 - <span class="font-bold">Duration</span>: 6
+                          Months
+                        </span>
+                      </span>
+                      <br />
+                    </p>
+
+                    <a
+                      class="group relative inline-block text-sm font-medium text-[#1DB954] focus:outline-none"
+                      href="#"
+                    >
+                      <span
+                        class="absolute inset-0 border border-current"
+                      ></span>
+                      <span
+                        class="uppercase block border border-current bg-transparent px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+                      >
+                        Enroll now
+                      </span>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="max-w-xl mb-6">
+              <h2
+                class="max-w-lg mb-6 font-sans text-2xl font-bold tracking-tight sm:leading-none"
+              >
+                Full Stack Development
+
+                <!-- <div class="  flex   ">
+                  <span class="bg-[#1DB954] h-1 w-8 p-2 "></span>
+                </div> -->
+              </h2>
+
+              <p class="text-base">
+                Are you interested in becoming a Full Stack Developer and
+                mastering the latest technologies and tools in web development?
+                Our Full Stack Development course is the perfect fit for you!
+              </p>
+            </div>
+            <p class="mb-4 text-sm font-bold tracking-widest uppercase">
+              What you will learn
+            </p>
+            <div class="">
+              <div class="flex flex-col justify-center">
+                <div
+                  class="grid py-2 lg:py-3 max-w-screen-lg mx-auto lg:grid-cols-2 lg:space-y-0 lg:divide-x space-y-3 sm:gap-2 sm:space-y-0"
+                >
+                  <ul class="space-y-4 sm:px-6">
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Front-end Development:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn the essentials of front-end development,
+                        including HTML, CSS, and JavaScript. You’ll also learn
+                        how to use frameworks like React, Vue.js, or Angular for
+                        building dynamic and responsive web applications.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Version Control:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to use Git and GitHub for version
+                        control, collaboration, and code management.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Relational and Non-Relational Databases:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn the basics of database design and
+                        management, including the difference between relational
+                        and non-relational databases, how to design database
+                        schemas, and how to interact with databases using SQL or
+                        NoSQL queries.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Testing and Debugging:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to test and debug web applications to
+                        ensure their reliability, security, and performance.
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="space-y-4 sm:px-6">
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Back-end Development:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to build back-end systems, including
+                        web servers, APIs, and databases. You’ll also learn how
+                        to use programming languages like Python, Node.js, or
+                        Java to build server-side applications.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Cloud Computing:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to deploy web applications to cloud
+                        services like Amazon Web Services (AWS), Google Cloud
+                        Platform (GCP)
+                      </p>
+                    </li>
+
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Security and Authentication:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to implement security measures such as
+                        HTTPS, SSL, and authentication mechanisms such as OAuth2
+                        and JWT.
+                      </p>
+                    </li>
+
+                    <p class="mt-4">
+                      <span class="font-bold"
+                        >Essentials:
+                        <span class="font-normal"
+                          >350,000 - <span class="font-bold">Duration</span>: 3
+                          Months
+                        </span>
+                      </span>
+                      <br />
+                      <span class="font-bold"
+                        >Bootcamp:
+                        <span class="font-normal"
+                          >700,000 - <span class="font-bold">Duration</span>: 6
+                          Months
+                        </span>
+                      </span>
+                      <br />
+                    </p>
+
+                    <a
+                      class="group relative inline-block text-sm font-medium text-[#1DB954] focus:outline-none"
+                      href="#"
+                    >
+                      <span
+                        class="absolute inset-0 border border-current"
+                      ></span>
+                      <span
+                        class="uppercase block border border-current bg-transparent px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+                      >
+                        Enroll now
+                      </span>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="max-w-xl mb-6">
+              <h2
+                class="max-w-lg mb-6 font-sans text-2xl font-bold tracking-tight sm:leading-none"
+              >
+                Full Stack Development
+
+                <!-- <div class="  flex   ">
+                  <span class="bg-[#1DB954] h-1 w-8 p-2 "></span>
+                </div> -->
+              </h2>
+
+              <p class="text-base">
+                Are you interested in becoming a Full Stack Developer and
+                mastering the latest technologies and tools in web development?
+                Our Full Stack Development course is the perfect fit for you!
+              </p>
+            </div>
+            <p class="mb-4 text-sm font-bold tracking-widest uppercase">
+              What you will learn
+            </p>
+            <div class="">
+              <div class="flex flex-col justify-center">
+                <div
+                  class="grid py-2 lg:py-3 max-w-screen-lg mx-auto lg:grid-cols-2 lg:space-y-0 lg:divide-x space-y-3 sm:gap-2 sm:space-y-0"
+                >
+                  <ul class="space-y-4 sm:px-6">
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Front-end Development:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn the essentials of front-end development,
+                        including HTML, CSS, and JavaScript. You’ll also learn
+                        how to use frameworks like React, Vue.js, or Angular for
+                        building dynamic and responsive web applications.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Version Control:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to use Git and GitHub for version
+                        control, collaboration, and code management.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Relational and Non-Relational Databases:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn the basics of database design and
+                        management, including the difference between relational
+                        and non-relational databases, how to design database
+                        schemas, and how to interact with databases using SQL or
+                        NoSQL queries.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Testing and Debugging:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to test and debug web applications to
+                        ensure their reliability, security, and performance.
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="space-y-4 sm:px-6">
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Back-end Development:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to build back-end systems, including
+                        web servers, APIs, and databases. You’ll also learn how
+                        to use programming languages like Python, Node.js, or
+                        Java to build server-side applications.
+                      </p>
+                    </li>
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Cloud Computing:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to deploy web applications to cloud
+                        services like Amazon Web Services (AWS), Google Cloud
+                        Platform (GCP)
+                      </p>
+                    </li>
+
+                    <li class="">
+                      <header class="flex items-center gap-2">
+                        <span class="bg-[#CDF7DC] p-1 rounded-full">
+                          <svg
+                            class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                            stroke="currentColor"
+                            viewBox="0 0 52 52"
+                          >
+                            <polygon
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                              points="29 13 14 29 25 29 23 39 38 23 27 23"
+                            ></polygon>
+                          </svg>
+                        </span>
+                        <h4 class="justify-center font-semibold">
+                          Security and Authentication:
+                        </h4>
+                      </header>
+
+                      <p class="my-3">
+                        You’ll learn how to implement security measures such as
+                        HTTPS, SSL, and authentication mechanisms such as OAuth2
+                        and JWT.
+                      </p>
+                    </li>
+
+                    <p class="mt-4">
+                      <span class="font-bold"
+                        >Essentials:
+                        <span class="font-normal"
+                          >350,000 - <span class="font-bold">Duration</span>: 3
+                          Months
+                        </span>
+                      </span>
+                      <br />
+                      <span class="font-bold"
+                        >Bootcamp:
+                        <span class="font-normal"
+                          >700,000 - <span class="font-bold">Duration</span>: 6
+                          Months
+                        </span>
+                      </span>
+                      <br />
+                    </p>
+
+                    <a
+                      class="group relative inline-block text-sm font-medium text-[#1DB954] focus:outline-none"
+                      href="#"
+                    >
+                      <span
+                        class="absolute inset-0 border border-current"
+                      ></span>
+                      <span
+                        class="uppercase block border border-current bg-transparent px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+                      >
+                        Enroll now
+                      </span>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a
+            class="group mt-5 relative inline-block text-sm font-medium text-[#1DB954] focus:outline-none"
+            href="#"
+          >
+            <span class="absolute inset-0 border border-current"></span>
+            <span
+              class="block border border-current bg-transparent px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+            >
+              Start Your Journey
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN CTA -->
+
+    <section class="px-4 py-10 md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-screen-lg mx-auto text-center">
+        <h2
+          class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#030051] sm:text-4xl md:mx-auto"
+        >
+          Join Our Community
+        </h2>
+
+        <p class="text-gray-500 sm:mt-4 sm:block max-w-lg mx-auto">
+          Start your journey towards a successful tech career today. Enroll in
+          one of our programs and transform your future
+        </p>
+
+        <a
+          class="group mt-5 relative inline-block text-sm font-medium text-[#1DB954] focus:outline-none"
+          href="#"
+        >
+          <span class="absolute inset-0 border border-current"></span>
+          <span
+            class="block border border-current bg-transparent px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+          >
+            Start Your Journey
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS Section -->
+    <section
+      class="px-4 py-10 md:px-24 lg:px-8 lg:py-20 bg-[#030051] text-white text-center"
+    >
+      <div class="max-w-screen-lg mx-auto">
+        <div class="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <h2 class="text-center text-lg sm:text-xl font-bold tracking-tight">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+
+          <h3
+            class="mb-6 font-sans text-2xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto"
+          >
+            GET YOUR QUESTIONS ANSWERED
+          </h3>
+
+          <!-- component -->
+          <div class="max-w-xl py-3 border mx-auto bg-transparent rounded-lg">
+            <div class="flex justify-center">
+              <nav class="-mb-px flex gap-10" id="tabs">
+                <a
+                  href="#general"
+                  id="default-tab"
+                  class="shrink-0 px-1 pb-4 text-sm font-medium text-[#E6E6E6] border-b-2 border-[#1DB954] hover:border-[#CDF7DC] hover:text-[#CDF7DC]"
+                >
+                  General
+                </a>
+
+                <a
+                  href="#pricing"
+                  class="shrink-0 px-1 pb-4 text-sm font-medium text-[#E6E6E6]"
+                >
+                  Pricing
+                </a>
+
+                <a
+                  href="#programs"
+                  class="shrink-0 px-1 pb-4 text-sm font-medium text-[#E6E6E6]"
+                >
+                  Programs
+                </a>
+              </nav>
+            </div>
+
+            <div id="tab-contents" class="text-left px-3">
+              <div class="tab-content" id="general">
+                <div
+                  class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-3"
+                >
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> What is a SAAS platform?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        SAAS platform is a cloud-based software service that
+                        allows users to access and use a variety of tools and
+                        functionality.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> How does billing work?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        We offers a variety of billing options, including
+                        monthly and annual subscription plans, as well as
+                        pay-as-you-go pricing for certain services. Payment is
+                        typically made through a credit card or other secure
+                        online payment method.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> Can I get a refund for my subscription?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        We offers a 30-day money-back guarantee for most of its
+                        subscription plans. If you are not satisfied with your
+                        subscription within the first 30 days, you can request a
+                        full refund. Refunds for subscriptions that have been
+                        active for longer than 30 days may be considered on a
+                        case-by-case basis.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> How do I cancel my subscription?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        To cancel your We subscription, you can log in to your
+                        account and navigate to the subscription management
+                        page. From there, you should be able to cancel your
+                        subscription and stop future billing.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content hidden" id="pricing">
+                <div
+                  class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-3"
+                >
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> What is a SAAS platform?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        SAAS platform is a cloud-based software service that
+                        allows users to access and use a variety of tools and
+                        functionality.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> How does billing work?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        We offers a variety of billing options, including
+                        monthly and annual subscription plans, as well as
+                        pay-as-you-go pricing for certain services. Payment is
+                        typically made through a credit card or other secure
+                        online payment method.
+                      </p>
+                    </details>
+                  </div>
+
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> How do I cancel my Programs?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        To cancel your We subscription, you can log in to your
+                        account and navigate to the subscription management
+                        page. From there, you should be able to cancel your
+                        subscription and stop future billing.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content hidden" id="programs">
+                <div
+                  class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-3"
+                >
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> What is a SAAS platform?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        SAAS platform is a cloud-based software service that
+                        allows users to access and use a variety of tools and
+                        functionality.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> How does billing work?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        We offers a variety of billing options, including
+                        monthly and annual subscription plans, as well as
+                        pay-as-you-go pricing for certain services. Payment is
+                        typically made through a credit card or other secure
+                        online payment method.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> Can I get a refund for my subscription?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        We offers a 30-day money-back guarantee for most of its
+                        subscription plans. If you are not satisfied with your
+                        subscription within the first 30 days, you can request a
+                        full refund. Refunds for subscriptions that have been
+                        active for longer than 30 days may be considered on a
+                        case-by-case basis.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex justify-between items-start font-medium cursor-pointer list-none"
+                      >
+                        <span> How do I cancel my subscription?</span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            fill="none"
+                            height="24"
+                            shape-rendering="geometricPrecision"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="24"
+                          >
+                            <path d="M6 9l6 6 6-6"></path>
+                          </svg>
+                        </span>
+                      </summary>
+                      <p class="mt-3 text-left group-open:animate-fadeIn">
+                        To cancel your We subscription, you can log in to your
+                        account and navigate to the subscription management
+                        page. From there, you should be able to cancel your
+                        subscription and stop future billing.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="px-4 py-10 md:px-24 lg:px-8 bg-[#030051] text-white">
+      <div class="max-w-screen-md mx-auto">
+        <div
+          class="text-center flex justify-center items-center flex-col space-y-5"
+        >
+          <div
+            class="w-[170px] h-[60px] relative flex justify-center items-center"
+          >
+            <a href="#" class="">
+              <img
+                class=""
+                src="./assets/Ascent-Tech-Hub-Africa-Logo-wh-sl-Digital-and-Tech-Skills-Center-Lagos-Nigeria-Africa2.webp.webp"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <p class="mt-4">Contact Us | Privacy Policy | Terms & Conditions</p>
+
+          <p class="mt-4">
+            This site is not a part of the Facebook website or Facebook Inc.
+            Additionally, This site is NOT endorsed by Facebook in any way.
+            FACEBOOK is a trademark of FACEBOOK, Inc.
+          </p>
+
+          <p>©2023 educate.io. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
-
-<div class="max-w-screen-xl mx-auto px-5">
-  <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-    <div class="py-5">
-      <details class="group">
-        <summary
-          class="flex justify-between items-start font-medium cursor-pointer list-none"
-        >
-          <span> What is a SAAS platform?</span>
-          <span class="transition group-open:rotate-180">
-            <svg
-              fill="none"
-              height="24"
-              shape-rendering="geometricPrecision"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <path d="M6 9l6 6 6-6"></path>
-            </svg>
-          </span>
-        </summary>
-        <p class="mt-3 text-left group-open:animate-fadeIn">
-          SAAS platform is a cloud-based software service that allows users to
-          access and use a variety of tools and functionality.
-        </p>
-      </details>
-    </div>
-    <div class="py-5">
-      <details class="group">
-        <summary
-          class="flex justify-between items-start font-medium cursor-pointer list-none"
-        >
-          <span> How does billing work?</span>
-          <span class="transition group-open:rotate-180">
-            <svg
-              fill="none"
-              height="24"
-              shape-rendering="geometricPrecision"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <path d="M6 9l6 6 6-6"></path>
-            </svg>
-          </span>
-        </summary>
-        <p class="mt-3 text-left group-open:animate-fadeIn">
-          We offers a variety of billing options, including monthly and annual
-          subscription plans, as well as pay-as-you-go pricing for certain
-          services. Payment is typically made through a credit card or other
-          secure online payment method.
-        </p>
-      </details>
-    </div>
-    <div class="py-5">
-      <details class="group">
-        <summary
-          class="flex justify-between items-start font-medium cursor-pointer list-none"
-        >
-          <span> Can I get a refund for my subscription?</span>
-          <span class="transition group-open:rotate-180">
-            <svg
-              fill="none"
-              height="24"
-              shape-rendering="geometricPrecision"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <path d="M6 9l6 6 6-6"></path>
-            </svg>
-          </span>
-        </summary>
-        <p class="mt-3 text-left group-open:animate-fadeIn">
-          We offers a 30-day money-back guarantee for most of its subscription
-          plans. If you are not satisfied with your subscription within the
-          first 30 days, you can request a full refund. Refunds for
-          subscriptions that have been active for longer than 30 days may be
-          considered on a case-by-case basis.
-        </p>
-      </details>
-    </div>
-    <div class="py-5">
-      <details class="group">
-        <summary
-          class="flex justify-between items-start font-medium cursor-pointer list-none"
-        >
-          <span> How do I cancel my subscription?</span>
-          <span class="transition group-open:rotate-180">
-            <svg
-              fill="none"
-              height="24"
-              shape-rendering="geometricPrecision"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <path d="M6 9l6 6 6-6"></path>
-            </svg>
-          </span>
-        </summary>
-        <p class="mt-3 text-left group-open:animate-fadeIn">
-          To cancel your We subscription, you can log in to your account and
-          navigate to the subscription management page. From there, you should
-          be able to cancel your subscription and stop future billing.
-        </p>
-      </details>
-    </div>
-  </div>
-</div>
